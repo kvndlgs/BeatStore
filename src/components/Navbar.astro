@@ -1,0 +1,46 @@
+---
+  import Logo from './Logo.astro';
+  import React, { useState } from 'react';
+
+  interface INavbarProps {
+  isOpen: boolean;
+  }
+
+  const {isOpen} = Astro.props;
+---
+
+
+
+
+  <header>
+    <div className='navbar-wrapper'>
+    <a href='/'>
+      <Logo size='40px' fill='pink' />
+    </a>
+    <div className='menu'>
+    <a href='/'> SAMPLE PACKS </a>
+    <a href='/'> COVERT ART</a>
+    <a href='/beats'> BEATS </a>
+    <a href='/'> MERCH </a>
+    </div>
+     </div>
+  </header>
+
+<style>
+ header {
+   width: 100%;
+   height: auto;
+ }
+ .navbar-wrapper {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: between;
+ }
+
+ a {
+   text-decoration: none;
+   color: #fff;
+ }
+</style>
