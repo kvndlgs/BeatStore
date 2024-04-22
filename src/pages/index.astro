@@ -1,19 +1,56 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Logo from '../components/Logo.astro';
+import Layout from "../layouts/Layout.astro";
+import LogoAnimate from "../components/LogoAnimate.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="LGTB OFFICIAL">
 	<main>
-	  <h2> LGTB STORE </h2>
-	  <Logo size='200' fill='pink' />
+		<div>
+			<LogoAnimate />
+			<h1>ONLINE SOON</h1>
+			<a href="https://www.beatstars.com/letsgetthisbrd" target="_blank">
+				BEATSTARS
+			</a>
+			<a href="https://9ae0fc-3.myshopify.com/" target="_blank"> MERCH</a>
+		</div>
 	</main>
+
+	<style>
+		main {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #3b3a45;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		main div {
+			padding: 2rem;
+			display: flex;
+			flex-direction: column;
+			align-items: space-around;
+			justify-content: center;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 2.3rem;
+			color: #fff;
+		}
+
+		a {
+			text-decoration: none;
+			font-family: "ArticulatCF-Bold", sans-serif;
+			background: #8f74fc;
+			color: #fff;
+			padding: 16px 8px;
+			border-bottom: 6px solid #18026e;
+		}
+	</style>
 </Layout>
-
-
-<style>
- h2 {
-	 color: #fff;
-	 font-size: 3.3rem;
- }
-</style>

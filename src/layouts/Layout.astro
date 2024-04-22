@@ -5,7 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 
-import Navbar from '../components/Navbar.astro';
+import Navbar from "../components/Navbar.astro";
 ---
 
 <!doctype html>
@@ -19,17 +19,22 @@ import Navbar from '../components/Navbar.astro';
 		<title>{title}</title>
 	</head>
 	<body>
-	  <Navbar />
 		<slot />
 	</body>
 </html>
 <style is:global>
-@font-face {
-	font-family: 'Riverside';
-	src: 
-		local('Riverside'),
-		url('/fonts/Riverside.ttf') format('ttf');
-}
+	@font-face {
+		font-family: "Riverside";
+		src:
+			local("Riverside"),
+			url("/fonts/Riverside.ttf") format("ttf");
+	}
+	@font-face {
+		font-family: "ArticulatCF-Bold";
+		src:
+			local("ArticulatCF-Bold"),
+			url("/fonts/ArticulatCF-Bold.ttf") format("ttf");
+	}
 
 	:root {
 		--accent: 136, 58, 234;
@@ -46,8 +51,12 @@ import Navbar from '../components/Navbar.astro';
 		font-family: system-ui, sans-serif;
 		background: #535262;
 	}
-  h1, h2, h3, h4, h5 {
-		font-family: 'Riverside', sans-serif;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: "Riverside", sans-serif;
 	}
 	code {
 		font-family:
